@@ -24,7 +24,7 @@ function Nav() {
       <nav className="flex justify-between  items-center h-13 lg:h-16 text-white bg-gradient-to-r from-lime-500 to-lime-600  w-full fixed px-5 md:px-5 lg:px-25 py-1.5 shadow-md z-50">
         <div className="flex h-full  items-center ">
           <img
-            className="h-full w-fit object-cover p-2 bg-white rounded-2xl shadow-md"
+            className="h-full w-14 object-cover p-2 bg-white rounded-2xl shadow-md"
             src="https://cdn-icons-png.flaticon.com/512/4564/4564089.png"
             alt=""
           />
