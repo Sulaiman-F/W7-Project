@@ -101,7 +101,7 @@ function ChatScreen() {
   };
 
   const userOptions = users
-    .filter((user) => user.username !== localStorage.getItem("user"))
+    // .filter((user) => user.username !== localStorage.getItem("user"))
     .map((user) => ({
       value: user.id,
       label: user.username,
