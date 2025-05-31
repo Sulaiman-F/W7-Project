@@ -16,7 +16,7 @@ function Nav() {
   const handleLogout = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("userId");
-    navigate("/Home");
+    navigate("/login");
   };
 
   return (
