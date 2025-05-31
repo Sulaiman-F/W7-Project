@@ -81,9 +81,9 @@ function Login() {
         <div className="hidden md:flex flex-col gap-y-5 items-center justify-center bg-gradient-to-bl from-cyan-400 to-lime-600 text-white h-full w-1/2 rounded-r-4xl">
           <h1 className="text-2xl">Welcome</h1>
           <p className="text-center text-lg w-3/4">
-            Welcome back! Please log in to access your personalized space where
-            you can manage your favorite characters. Enter your email and
-            password to continue your journey!
+            Welcome back! Please log in to chat with your friends and family.
+            <br />
+            Enjoy fast, secure, and easy one-on-one messaging—anytime, anywhere.
           </p>
         </div>
         <div className="flex flex-col items-center justify-center bg-neutral-100 h-full w-1/2">
@@ -148,20 +148,6 @@ function Login() {
                 </button>
               </div>
 
-              <p className="text-center text-sm ">
-                OR continue as{" "}
-                <Link
-                  to="/home"
-                  className="hover:underline hover:text-lime-500"
-                  onClick={() => {
-                    localStorage.removeItem("user");
-                    localStorage.removeItem("userId");
-                  }}
-                >
-                  {" "}
-                  Guest
-                </Link>
-              </p>
               <button
                 className="bg-lime-500 text-white p-2 rounded-lg w-40 hover:bg-lime-600 transition-colors duration-300 shadow-md hover:shadow-lg cursor-pointer"
                 type="submit"

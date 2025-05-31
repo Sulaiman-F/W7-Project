@@ -142,9 +142,10 @@ function Register() {
         <div className="hidden md:flex flex-col gap-y-5 items-center justify-center bg-gradient-to-bl from-lime-400 to-lime-600 text-white h-full w-1/2 rounded-r-4xl">
           <h1 className="text-2xl">Welcome</h1>
           <p className="text-center text-lg w-3/4">
-            Welcome! Join us today and become a part of our creative community.
-            Register with your email and a secure password to start creating,
-            exploring, and sharing amazing characters with others!
+            Welcome! Join us today and become part of our growing community.
+            Enjoy seamless messaging, connect with friends and family, and
+            experience the joy of instant communication. Register now to get
+            started!
           </p>
         </div>
         <div className="flex flex-col items-center justify-center bg-neutral-100 h-full w-1/2">

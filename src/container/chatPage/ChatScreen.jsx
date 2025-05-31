@@ -100,10 +100,12 @@ function ChatScreen() {
       .finally(() => setLoadingChat(false));
   };
 
-  const userOptions = users.map((user) => ({
-    value: user.id,
-    label: user.username,
-  }));
+  const userOptions = users
+    .filter((user) => user.username !== localStorage.getItem("user"))
+    .map((user) => ({
+      value: user.id,
+      label: user.username,
+    }));
 
   if (loading) {
     return (
@@ -158,9 +160,12 @@ function ChatScreen() {
       )}
 
       <div className="w-full flex flex-col gap-5 py-5 bg-neutral-100 px-5 md:px-5 lg:px-25">
-        <div className="flex items-center justify-between lg:justify-start gap-5 ">
-          <h1 className="text-lg md:text-xl font-semibold">Select User</h1>
+        <div className="flex items-center justify-between lg:justify-start gap-8 ">
+          <h1 className="text-xl md:text-3xl font-semibold  underline underline-offset-4 decoration-lime-500">
+            {localStorage.getItem("user")}
+          </h1>
           <div className="w-40 md:w-60">
+            <h1 className="text-neutral-500 text-sm">Select User</h1>
             <Select
               isDisabled={loadingChat}
               options={userOptions}
